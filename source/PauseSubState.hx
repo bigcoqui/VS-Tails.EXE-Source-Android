@@ -131,8 +131,9 @@ class PauseSubState extends MusicBeatSubstate
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 		
 	#if android
-	addVirtualPad(FULL, A_B);
+	addVirtualPad(UP_DOWN, A_B);
   #end
+  
 	}
 	function regenMenu() 
 	{
@@ -159,8 +160,8 @@ class PauseSubState extends MusicBeatSubstate
 
 		super.update(elapsed);
 
-		var upP = controls.UP_P;
-		var downP = controls.DOWN_P;
+		var upP = controls.UP;
+		var downP = controls.DOWN;
 		var accepted = controls.ACCEPT;
 
 		if(canCountdown)
