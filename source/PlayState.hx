@@ -745,7 +745,6 @@ class PlayState extends MusicBeatState
 		bgForNotes12.alpha = 0.4;
 		bgForNotes22.alpha = 0.4;
 
-		if(FlxG.save.data.middlescroll)
 		{
 			bgForNotes2.alpha = 0.2;
 			bgForNotes1.alpha = 0.2;
