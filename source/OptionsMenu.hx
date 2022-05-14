@@ -151,9 +151,9 @@ class OptionsMenu extends MusicBeatState
 				curSelected = 0;
 				changeSelection(0);
 			}
-			if (controls.UP_P)
+			if (controls.UP)
 				changeSelection(-1);
-			if (controls.DOWN_P)
+			if (controls.DOWN)
 				changeSelection(1);
 			
 			if (isCat)
@@ -162,16 +162,16 @@ class OptionsMenu extends MusicBeatState
 				{
 					if (FlxG.keys.pressed.SHIFT)
 						{
-							if (controls.RIGHT_P)
+							if (controls.RIGHT)
 								currentSelectedCat.getOptions()[curSelected].right();
-							if (controls.LEFT_P)
+							if (controls.LEFT)
 								currentSelectedCat.getOptions()[curSelected].left();
 						}
 					else
 					{
-						if (controls.RIGHT_P)
+						if (controls.RIGHT)
 							currentSelectedCat.getOptions()[curSelected].right();
-						if (controls.LEFT_P)
+						if (controls.LEFT)
 							currentSelectedCat.getOptions()[curSelected].left();
 					}
 				}
