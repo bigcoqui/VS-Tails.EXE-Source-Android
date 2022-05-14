@@ -58,7 +58,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			endBullshit();
 		}
 	  #if android
-	  addVirtualPad(FULL, A_B);
+	  addVirtualPad(NONE, A_B);
     #end
 	}
 
