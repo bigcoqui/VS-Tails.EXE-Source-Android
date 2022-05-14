@@ -957,6 +957,10 @@ class PlayState extends MusicBeatState
 		
 		doof.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
+		
+	  #if android
+    addAndroidControls();
+    #end;
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
@@ -1017,14 +1021,8 @@ class PlayState extends MusicBeatState
 					startCountdown();
 			}
 		}
-		
-  #if android
-	addAndroidControls();
-  #end
 
 		super.create();
-
-		Paths.clearUnusedMemory();
 	}
 
 
