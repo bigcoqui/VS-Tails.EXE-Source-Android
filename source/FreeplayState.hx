@@ -48,6 +48,9 @@ class FreeplayState extends MusicBeatState
 
 	override function create()
 	{
+	  Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
 		if(FlxG.save.data.octaneUnlocked)
 			leSongList = 'altFreeplaySonglist';
 		else
