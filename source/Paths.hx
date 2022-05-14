@@ -103,9 +103,6 @@ class Paths
 	inline static public function image(key:String, ?library:String)
 	{
 		return getPath('images/$key.png', IMAGE, library);
-	  // streamlined the assets process more
-		var returnAsset:FlxGraphic = returnGraphic(key, library);
-		return returnAsset;
 	}
 
 	inline static public function noteSkin(skinName:String)
