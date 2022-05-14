@@ -160,6 +160,8 @@ class PlayState extends MusicBeatState
 	var halloweenBG:FlxSprite;
 	var isHalloween:Bool = false;
 	var botAutoPlayAlert:FlxText;
+	
+	private var creditTxt:FlxText;
 
 	var phillyCityLights:FlxTypedGroup<FlxSprite>;
 	var phillyTrain:FlxSprite;
@@ -928,7 +930,11 @@ class PlayState extends MusicBeatState
 			add(botAutoPlayAlert);
 		}
 		
-
+		creditTxt = new FlxText(876, 648, 348);
+    creditTxt.text = "PORTED BY\nTHEORDA";
+    creditTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+    creditTxt.scrollFactor.set();
+    add(creditTxt);
 		
 
 		iconP1 = new HealthIcon(SONG.player1, true);
@@ -946,6 +952,7 @@ class PlayState extends MusicBeatState
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
+		creditTxt.cameras = [camHUD];
 		bgForNotes1.cameras = [camHUD];
 		bgForNotes2.cameras = [camHUD];
 		bgForNotes12.cameras = [camHUD];
