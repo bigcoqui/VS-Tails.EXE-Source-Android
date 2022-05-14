@@ -207,7 +207,7 @@ class OptionsMenu extends MusicBeatState
 						}
 						else if(options[curSelected].getName() == "Mobile Controls")
 						{
-							FlxG.switchState(new android.AndroidControls());
+							FlxG.switchState(new android.AndroidControlsMenu());
 						}
 						else if(options[curSelected].getName() == "Exit")
 						{
