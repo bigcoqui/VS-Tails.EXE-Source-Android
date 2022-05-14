@@ -57,6 +57,9 @@ class GameOverSubstate extends MusicBeatSubstate
 		{
 			endBullshit();
 		}
+	  #if android
+	  addVirtualPad(FULL, A_B);
+    #end
 	}
 
 	override function update(elapsed:Float)
