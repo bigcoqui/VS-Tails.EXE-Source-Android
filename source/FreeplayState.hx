@@ -230,8 +230,8 @@ class FreeplayState extends MusicBeatState
 
 		maxAccText.text = "AVERAGE ACCURACY:" + lerpMaxAcc + "%";
 
-		var upP = controls.UP;
-		var downP = controls.DOWN;
+		var upP = controls.UP_P;
+		var downP = controls.DOWN_P;
 		var accepted = controls.ACCEPT;
 
 		if (upP)
