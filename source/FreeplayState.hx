@@ -168,6 +168,10 @@ class FreeplayState extends MusicBeatState
 
 			trace(md);
 		 */
+		
+		#if android
+		addVirtualPad(UP_DOWN, A_B);
+		#end
 
 		super.create();
 	}
@@ -230,8 +234,8 @@ class FreeplayState extends MusicBeatState
 
 		maxAccText.text = "AVERAGE ACCURACY:" + lerpMaxAcc + "%";
 
-		var upP = controls.UP_P;
-		var downP = controls.DOWN_P;
+		var upP = controls.UP;
+		var downP = controls.DOWN;
 		var accepted = controls.ACCEPT;
 
 		if (upP)
