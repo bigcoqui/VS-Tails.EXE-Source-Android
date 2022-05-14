@@ -37,10 +37,10 @@ class OptionsSubState extends MusicBeatSubstate
 	{
 		super.update(elapsed);
 
-		if (controls.UP_P)
+		if (controls.UP)
 			curSelected -= 1;
 
-		if (controls.DOWN_P)
+		if (controls.DOWN)
 			curSelected += 1;
 
 		if (curSelected < 0)
