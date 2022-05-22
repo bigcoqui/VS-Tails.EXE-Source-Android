@@ -24,10 +24,10 @@ enum abstract Action(String) to String from String
 	var LEFT = "left";
 	var RIGHT = "right";
 	var DOWN = "down";
-	var UP_P = "up-press";
-	var LEFT_P = "left-press";
-	var RIGHT_P = "right-press";
-	var DOWN_P = "down-press";
+	var UI_UP_P = "ui_up-press";
+	var UI_LEFT_P = "ui_left-press";
+	var UI_RIGHT_P = "ui_right-press";
+	var UI_DOWN_P = "ui_down-press";
 	var UP_R = "up-release";
 	var LEFT_R = "left-release";
 	var RIGHT_R = "right-release";
@@ -46,10 +46,10 @@ abstract Action(String) to String from String
 	var LEFT = "left";
 	var RIGHT = "right";
 	var DOWN = "down";
-	var UP_P = "up-press";
-	var LEFT_P = "left-press";
-	var RIGHT_P = "right-press";
-	var DOWN_P = "down-press";
+	var UI_UP_P = "ui_up-press";
+	var UI_LEFT_P = "ui_left-press";
+	var UI_RIGHT_P = "ui_right-press";
+	var UI_DOWN_P = "ui_down-press";
 	var UP_R = "up-release";
 	var LEFT_R = "left-release";
 	var RIGHT_R = "right-release";
@@ -104,10 +104,10 @@ class Controls extends FlxActionSet
 	var _left = new FlxActionDigital(Action.LEFT);
 	var _right = new FlxActionDigital(Action.RIGHT);
 	var _down = new FlxActionDigital(Action.DOWN);
-	var _upP = new FlxActionDigital(Action.UP_P);
-	var _leftP = new FlxActionDigital(Action.LEFT_P);
-	var _rightP = new FlxActionDigital(Action.RIGHT_P);
-	var _downP = new FlxActionDigital(Action.DOWN_P);
+	var _ui_upP = new FlxActionDigital(Action.UI_UP_P);
+	var _ui_leftP = new FlxActionDigital(Action.UI_LEFT_P);
+	var _ui_rightP = new FlxActionDigital(Action.UI_RIGHT_P);
+	var _ui_downP = new FlxActionDigital(Action.UI_DOWN_P);
 	var _upR = new FlxActionDigital(Action.UP_R);
 	var _leftR = new FlxActionDigital(Action.LEFT_R);
 	var _rightR = new FlxActionDigital(Action.RIGHT_R);
@@ -147,24 +147,24 @@ class Controls extends FlxActionSet
 	inline function get_DOWN()
 		return _down.check();
 
-	public var UP_P(get, never):Bool;
+	public var UI_UP_P(get, never):Bool;
 
-	inline function get_UP_P()
+	inline function get_UI_UP_P()
 		return _upP.check();
 
-	public var LEFT_P(get, never):Bool;
+	public var UI_LEFT_P(get, never):Bool;
 
-	inline function get_LEFT_P()
+	inline function get_UI_LEFT_P()
 		return _leftP.check();
 
-	public var RIGHT_P(get, never):Bool;
+	public var UI_RIGHT_P(get, never):Bool;
 
-	inline function get_RIGHT_P()
+	inline function get_UI_RIGHT_P()
 		return _rightP.check();
 
-	public var DOWN_P(get, never):Bool;
+	public var UI_DOWN_P(get, never):Bool;
 
-	inline function get_DOWN_P()
+	inline function get_UI_DOWN_P()
 		return _downP.check();
 
 	public var UP_R(get, never):Bool;
