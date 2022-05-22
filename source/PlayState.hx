@@ -2809,10 +2809,10 @@ class PlayState extends MusicBeatState
 		// control arrays, order L D U R
 		var holdArray:Array<Bool> = [control.LEFT, control.DOWN, control.UP, control.RIGHT];
 		var pressArray:Array<Bool> = [
-			control.LEFT_P,
-			control.DOWN_P,
-			control.UP_P,
-			control.RIGHT_P
+			control.UI_LEFT_P,
+			control.UI_DOWN_P,
+			control.UI_UP_P,
+			control.UI_RIGHT_P
 		];
 		var releaseArray:Array<Bool> = [
 			control.LEFT_R,
