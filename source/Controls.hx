@@ -150,22 +150,22 @@ class Controls extends FlxActionSet
 	public var UI_UP_P(get, never):Bool;
 
 	inline function get_UI_UP_P()
-		return _upP.check();
+		return _ui_upP.check();
 
 	public var UI_LEFT_P(get, never):Bool;
 
 	inline function get_UI_LEFT_P()
-		return _leftP.check();
+		return _ui_leftP.check();
 
 	public var UI_RIGHT_P(get, never):Bool;
 
 	inline function get_UI_RIGHT_P()
-		return _rightP.check();
+		return _ui_rightP.check();
 
 	public var UI_DOWN_P(get, never):Bool;
 
 	inline function get_UI_DOWN_P()
-		return _downP.check();
+		return _ui_downP.check();
 
 	public var UP_R(get, never):Bool;
 
@@ -221,10 +221,10 @@ class Controls extends FlxActionSet
 		add(_left);
 		add(_right);
 		add(_down);
-		add(_upP);
-		add(_leftP);
-		add(_rightP);
-		add(_downP);
+		add(_ui_upP);
+		add(_ui_leftP);
+		add(_ui_rightP);
+		add(_ui_downP);
 		add(_upR);
 		add(_leftR);
 		add(_rightR);
@@ -437,19 +437,19 @@ class Controls extends FlxActionSet
 		{
 			case UP:
 				func(_up, PRESSED);
-				func(_upP, JUST_PRESSED);
+				func(_ui_upP, JUST_PRESSED);
 				func(_upR, JUST_RELEASED);
 			case LEFT:
 				func(_left, PRESSED);
-				func(_leftP, JUST_PRESSED);
+				func(_ui_leftP, JUST_PRESSED);
 				func(_leftR, JUST_RELEASED);
 			case RIGHT:
 				func(_right, PRESSED);
-				func(_rightP, JUST_PRESSED);
+				func(_ui_rightP, JUST_PRESSED);
 				func(_rightR, JUST_RELEASED);
 			case DOWN:
 				func(_down, PRESSED);
-				func(_downP, JUST_PRESSED);
+				func(_ui_downP, JUST_PRESSED);
 				func(_downR, JUST_RELEASED);
 			case ACCEPT:
 				func(_accept, JUST_PRESSED);
